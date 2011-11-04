@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/mceinleger
+# catalog-date 2007-01-09 22:36:10 +0100
+# catalog-license gpl
+# catalog-version undef
 Name:		texlive-mceinleger
 Version:	20070109
 Release:	1
@@ -40,6 +46,7 @@ e.g.). The rotating package is required.
 %{_texmfdistdir}/tex/latex/mceinleger/mceinleger.sty
 %doc %{_texmfdistdir}/doc/latex/mceinleger/mceinleger.pdf
 %doc %{_texmfdistdir}/doc/latex/mceinleger/mceinleger.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -50,3 +57,5 @@ e.g.). The rotating package is required.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
