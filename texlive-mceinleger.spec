@@ -47,3 +47,17 @@ e.g.). The rotating package is required.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070109-2
++ Revision: 753834
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070109-1
++ Revision: 718981
+- texlive-mceinleger
+- texlive-mceinleger
+- texlive-mceinleger
+- texlive-mceinleger
+
