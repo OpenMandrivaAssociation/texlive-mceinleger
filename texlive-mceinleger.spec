@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-mceinleger
 Version:	20070109
-Release:	3
+Release:	4
 Summary:	Creating covers for music cassettes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mceinleger
