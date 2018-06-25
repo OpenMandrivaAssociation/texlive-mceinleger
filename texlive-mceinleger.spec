@@ -1,5 +1,5 @@
 Name:		texlive-mceinleger
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Creating covers for music cassettes
 Group:		Publishing
