@@ -1,12 +1,12 @@
 Name:		texlive-mceinleger
-Version:	20190228
+Version:	15878
 Release:	1
 Summary:	Creating covers for music cassettes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mceinleger
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mceinleger.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mceinleger.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mceinleger.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mceinleger.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -19,12 +19,12 @@ page for more information about the cassette (table of contents
 e.g.). The rotating package is required.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -33,7 +33,7 @@ e.g.). The rotating package is required.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
