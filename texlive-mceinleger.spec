@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Creating covers for music cassettes
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mceinleger
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/mceinleger
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mceinleger.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mceinleger.doc.r%{version}.tar.xz
